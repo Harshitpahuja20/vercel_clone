@@ -1,38 +1,25 @@
-.App {
-  text-align: center;
+.repoboxes::-webkit-scrollbar{
+  width: 4px;
+  background-color: rgb(217, 217, 217);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.repoboxes::-webkit-scrollbar-thumb{
+  background-color: grey;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.react-terminal::-webkit-scrollbar{
+  width: 6px;
+  background-color: #3d4453df;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.react-terminal::-webkit-scrollbar-thumb{
+  background-color: gray;
 }
 
-.App-link {
-  color: #61dafb;
+.react-terminal-line{
+  color: rgb(0, 178, 0);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.react-terminal{
+  height: 625px !important;
 }

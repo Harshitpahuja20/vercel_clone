@@ -24,7 +24,7 @@ const PageNotFound = () => {
         temporarily unavilable .
       </Text>
       <Button
-        bg="brand"
+        bg="black"
         color={"white"}
         mt="1rem"
         rounded="full"

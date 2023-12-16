@@ -2,6 +2,7 @@ import { Navigate, Outlet, createBrowserRouter } from "react-router-dom";
 import LoginPage from "../Pages/LoginPage";
 import FetchDetail from "../Pages/FetchDetail";
 import HomePage from "../Pages/HomePage";
+import PageNotFound from "../Pages/ErrorPage";
 
 let router = "";
 
@@ -15,6 +16,9 @@ let authRoutes = [{
       element: <HomePage />,
     },
   ],
+},{
+  path: "/*",
+  element: <PageNotFound />,
 },];
 
 let unAuthRoutes = [
@@ -32,6 +36,9 @@ let unAuthRoutes = [
         element: <FetchDetail />,
       },
     ],
+  },{
+    path: "/*",
+    element: <PageNotFound />,
   },
 ];
 

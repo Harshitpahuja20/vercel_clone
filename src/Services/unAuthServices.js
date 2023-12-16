@@ -1,5 +1,6 @@
 // import {  socketServer } from "../Socket/socket";
 
+import { useToast } from "@chakra-ui/react";
 import { socketIo } from "../Socket/socket";
 
 const client_id = process.env.REACT_APP_CLIENT_ID;
@@ -11,6 +12,6 @@ export function loginwithgithub() {
   );
 }
 
-export function sendSessionCode(code){
-  socketIo.emit("callback" , code)
+export function sendSessionCode(code) {
+  socketIo.emit("callback", code);
 }
